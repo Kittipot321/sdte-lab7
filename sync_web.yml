@@ -2,5 +2,17 @@
   tasks:
   - name: "copy website"
     copy:
-      src: site/
+      src: site/index.html
+      dest: /var/www/default
+- hosts: web2
+  tasks:
+  - name: "copy website"
+    copy:
+      src: site/alarm.html
+      dest: /var/www/default
+- hosts: web3
+  tasks:
+  - name: "copy website"
+    copy:
+      src: site/bird.html
       dest: /var/www/default
