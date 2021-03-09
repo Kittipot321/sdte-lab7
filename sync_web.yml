@@ -3,16 +3,16 @@
   - name: "copy website"
     copy:
       src: site/index.html
-      dest: /var/www/default
+      dest: /var/www/html/index.html
 - hosts: web2
   tasks:
   - name: "copy website"
     copy:
       src: site/alarm.html
-      dest: /var/www/default
+      dest: /var/www/html/alarm.html
 - hosts: web3
   tasks:
   - name: "copy website"
     copy:
       src: site/bird.html
-      dest: /var/www/default
+      dest: /var/www/html/bird.html
